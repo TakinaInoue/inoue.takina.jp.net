@@ -1,2 +1,46 @@
-<h2>Website under maintenance</h2>
-<p>wait for now.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inoue.takina</title>
+    
+    <link rel="stylesheet" href="/css/vars.css">
+    <link rel="stylesheet" href="/css/core.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/icons/ribbon.png">
+            <h1>inoue.takina</h1>
+        </div>
+        <div class="left">
+            <input id="searchfield" type="text" placeholder="Search">
+            <img src="/icons/search.png">
+        </div>
+    </header>
+    <div class="content">
+        <div class="bluebox">
+            <h1 class="title"><span>N</span>ews</h1>
+            <div class="article">
+                <h2>A feather-like text editor <span>March 7, 2024</span></h2>
+                <p>
+                    <p>Text editors nowadays (the fancy ones like vscode, sublime,
+                        and whatever is the new cool editor in the block) all have the same issue:
+                    they can't seem to use little resources, they're all amazingly heavy. 
+                    So, I decided to ditch out electron and all the weird frameworks for a code editor 
+                    written from scratch inspired by no other than Netscape Composer (at least.. the name Composer)</p>
+                    <p>I shall present.. the new.. Irie Composer!</p>
+                    <img src="/icons/news/iriecomposer-dbg.png">
+                    <p>yeah.. not finished so its not that worth to already start comparing it to the modern ones.. but hey, its going there.
+                        UI was written from scratch with OpenGL, and text rendering being done using Multi Signed Distance Fields (<a href="https://github.com/Chlumsky/msdfgen">MSDF</a>)
+                        But not to worry, it sounds heavy but its really efficient, quite more than mesh based font rendering.
+                        Fonts used are the same as the websites, with the exception the editor uses MPLUS Code instead of IBM Plex Mono.
+                    </p>
+                    <p>Anyway, that's enough for today. I'll keep posting updates on this project here and eventually give its own <a href="/projects/irie-composer/">page</a> once it becomes usable.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

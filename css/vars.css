@@ -1,0 +1,44 @@
+@font-face {
+    font-family: MPLUS2;
+    src: url(/fonts/MPLUS2-Regular.ttf);
+}
+
+@font-face {
+    font-family: KUMBH;
+    src: url(/fonts/kumbh_sans.ttf);
+}
+
+@font-face {
+    font-family: IBMPlex;
+    src: url(/fonts/IBMPlexMono.ttf);
+}
+
+:root {
+    --inoue-body-bg: #FEFEFE;
+    --inoue-body-fg: #0A0A0A;
+    --inoue-article-h2: #2A2A2A;
+
+    --inoue-input-border: #0E0E0EAA;
+    --inoue-input-color: #242424aa;
+    --inoue-input-placeholder: #4E4E4E;
+
+    --inoue-header-bg: var(--inoue-blue);
+
+    --inoue-blue: #7bc5f7;
+    --inoue-red: #eb416e;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {    
+        --inoue-blue: #0099ff;
+        --inoue-red: #FF0043;
+
+        --inoue-body-fg: #FEFEFE;
+        --inoue-body-bg: rgb(11,11,11);
+        --inoue-article-h2: #FFFFFFDD;
+    
+        --inoue-input-border: #FFFFFFDD;
+        --inoue-input-color: #FAFAFA;
+        --inoue-input-placeholder: #FFFFFFAA;
+    }
+}
