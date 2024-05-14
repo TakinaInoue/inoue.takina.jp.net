@@ -26,6 +26,12 @@
 
     --inoue-blue: #7bc5f7;
     --inoue-red: #eb416e;
+
+    --inoue-ribbon: url(/icons/ribbon-black.png);
+}
+
+.logoimg {
+    background-image: var(--inoue-ribbon);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,5 +46,6 @@
         --inoue-input-border: #FFFFFFDD;
         --inoue-input-color: #FAFAFA;
         --inoue-input-placeholder: #FFFFFFAA;
+        --inoue-ribbon: url(/icons/ribbon.png);
     }
 }
