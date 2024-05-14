@@ -20,7 +20,7 @@ function __it_GetDistance(data, words) {
 
         let i = 0;
         while ((i = cp.lastIndexOf(word)) > -1) {
-            alert(i);
+           // alert(i);
             cp = cp.substring(0, i);
             count++;
         }
@@ -52,15 +52,29 @@ let SearchEngine = {
             }
         }
 
+        if (results.length == 0) {
+            document.querySelector(".results").innerHTML = "<h1>No results were found, sorry.</h1>";
+            return;
+        }
+
         results = results.sort((a, b) => a.rank > b.rank);
+        let txt = `<h1>${results.length} Search Result${results.length>1 ? 's' : ''}</h1>`;
         results.forEach(elm => {
-            
+            let url = "https://takina.jp.net/"+elm.pathname;
+            txt += `<div class="result">
+                        <a class="h2" href=${url}>${elm.title}</a>
+                        <a href="${url}">${url}</a>
+                        <p>${elm.description}</p>
+                    </div>`;
         })
+        document.querySelector(".results").innerHTML = txt;
     },
     onSearchKeyPress : function(event) {
         if (event.keyCode == 13) { 
             event.preventDefault();
             let query = event.target.value.trim();
+            if (query.length == 0)
+                return;
             if (!window.location.pathname.includes("search.html")) {
                 window.location = "/search.html?query="+encodeURI(query);
                 return;

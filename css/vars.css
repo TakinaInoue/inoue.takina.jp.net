@@ -17,6 +17,8 @@
     --inoue-body-bg: #FEFEFE;
     --inoue-body-fg: #0A0A0A;
     --inoue-article-h2: #2A2A2A;
+    
+    --inoue-ring: #0A0A0A44;
 
     --inoue-input-border: #0E0E0EAA;
     --inoue-input-color: #242424aa;
@@ -38,6 +40,8 @@
     :root {    
         --inoue-blue: #0099ff;
         --inoue-red: #FF0043;
+
+        --inoue-ring: #FEFEFE44;
 
         --inoue-body-fg: #FEFEFE;
         --inoue-body-bg: rgb(11,11,11);

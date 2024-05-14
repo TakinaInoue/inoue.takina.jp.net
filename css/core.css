@@ -117,6 +117,11 @@ header .left img {
     }
 }
 
+.logo {
+    user-select: none;
+    cursor: pointer;
+}
+
 header a,
 header h1,
 header h2,
