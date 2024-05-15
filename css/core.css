@@ -89,6 +89,16 @@ header .left img {
     header .left img {
         right: 2vh;
     }
+    .article h2 {
+        display: flex;
+        align-items: center;
+    }
+    .article h2 span {
+        margin-left:  auto;
+    }
+    .article img {
+        width: 50vw;
+    }
 } 
 
 @media not screen and (orientation: landscape)  {
@@ -111,9 +121,14 @@ header .left img {
         padding-bottom: 1vh;
         padding-right: 14vw;
         width: calc(100% - 26vw);
+        margin: 0 auto;
     }
     header .left img {
-        right: 15vw!important;
+        right: 9vw!important;
+    }
+
+    .article img {
+        width: 80vw;
     }
 }
 
@@ -160,8 +175,6 @@ img {
 }
 
 .article h2 span {
-    float: right;
-    margin-right: 15px;
     font-family: MPLUS2;
     font-weight: normal;
 }

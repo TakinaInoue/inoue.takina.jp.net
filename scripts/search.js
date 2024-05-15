@@ -58,9 +58,9 @@ let SearchEngine = {
         }
 
         results = results.sort((a, b) => a.rank > b.rank);
-        let txt = `<h1>${results.length} Search Result${results.length>1 ? 's' : ''}</h1>`;
+        let txt = `<h1 id=\"rsttext\">${results.length} Search Result${results.length>1 ? 's' : ''}</h1>`;
         results.forEach(elm => {
-            let url = "https://takina.jp.net/"+elm.pathname;
+            let url = "https://takina.jp.net"+elm.pathname;
             txt += `<div class="result">
                         <a class="h2" href=${url}>${elm.title}</a>
                         <a href="${url}">${url}</a>
