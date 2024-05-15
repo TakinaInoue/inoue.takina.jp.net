@@ -28,6 +28,26 @@
     <script src="scripts/search.js"></script>
 </head> 
 <body>
+    <script>
+        window.addEventListener("load", ()=>{
+            let searchParams = new URLSearchParams(window.location.search);
+            if (searchParams.get("src") == "linkedin") {
+                let aaa = document.querySelector(".content");
+                // there's probably a better way to insert this..
+                aaa.innerHTML = `<div class="red box">
+            <h1 class="title"><span>N</span>otice</h1>
+            <div class="article">
+                <h2>Yes, I'm Henrique Natalucci.</h2>
+                <p>Hi there, if you came from LinkedIn (according to the "src" search parameter you likely did) this is in fact my personal website, the name "Takina" is used because I've long been an anonymous developer in the internet publishing programs I created,
+                    I've had some websites in the past, the previous one was <a href="https://lycorishq.link">lycorishq.link</a> but I archived it together with all software present on it.
+                </p>
+                <p>Either way, Yes, this website is owned by Henrique Natalucci.</p>
+            </div>
+        </div>
+        ` + aaa.innerHTML;        
+            }
+        });
+    </script>
     <header>
         <div class="logo" onclick="window.location.pathname = '/'">
             <div class="logoimg"></div>
@@ -39,7 +59,7 @@
         </div>
     </header>
     <div class="content">
-        <div class="bluebox">
+        <div class="box blue">
             <h1 class="title"><span>N</span>ews</h1>
             <div class="article">
                 <h2>A feather-like text editor <span>March 7, 2024</span></h2>

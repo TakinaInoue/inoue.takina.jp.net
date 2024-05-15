@@ -164,8 +164,15 @@ img {
     margin: 2vh;
 }
 
-.bluebox {
+.box.blue {
     border-left: 5px solid var(--inoue-blue);
+}
+
+.box.red {
+    border-left: 5px solid var(--inoue-red);
+}
+
+.box {
     padding-left: 15px;
 }
 
@@ -179,6 +186,9 @@ img {
     font-weight: normal;
 }
 
-.bluebox .title span {
+.box.blue .title span {
     color: var(--inoue-blue);
+}
+.box.red .title span {
+    color: var(--inoue-red);
 }
