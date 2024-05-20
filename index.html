@@ -62,6 +62,23 @@
         <div class="box blue">
             <h1 class="title"><span>N</span>ews</h1>
             <div class="article">
+                <h2>Irie Composer rewrite & about ARM and macOS support <span>May 20, 2024</span></h2>
+                <p>
+                    <p>Turns out my code for irie composer's UI and functionalities was very, very attatched to windows, 
+                    in a way that even trying to cross-compile it is incredibly painful.</p>
+                    <p>Therefore I've began a boring process of recoding it entirely and building it under a linux distro in a VM and
+                    constantly cross-compiling to windows and building for the linux distro I'm in.</p>
+                    <h3>About ARM and macOS</h3>
+                    <p>I don't have any apple devices so I can't realiably test and develop Irie Composer for macOS.
+                    Maybe one day I'll get my hands on a cheap macbook and code it to support macOS? if that ever happens, you can be sure
+                    I'll code support for it to work under ARM hosts aswell. the thing is, only way to have OpenGL 3.3 on ARM is to emulate it
+                    which doesn't offers the most optimal performance</p>
+                    <p>Sure, Irie Composer isn't a grafically intense application, but it wouldn't make sense to provide ARM builds when the
+                    program itself uses emulation to run on the platform, I wouldn't want that in my text editor.</p>
+                    <p>That's it for news. it's a lot harder to support multiple operating systems and architectures than I had originally imagined.</p>
+                </p>
+            </div>
+            <div class="article">
                 <h2>A feather-like text editor <span>March 7, 2024</span></h2>
                 <p>
                     <p>Text editors nowadays (the fancy ones like vscode, sublime,
